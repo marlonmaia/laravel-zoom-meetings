@@ -60,4 +60,15 @@ class Meeting
 
         return [];
     }
+
+    
+    /**
+     * @throws HttpException
+     * @throws InvalidAccessTokenException
+     */
+    public function find(string $meetingId)
+    {
+        $meetings = Client::get('meetings/'.urlencode($meetingId), self::$access_token);
+        return $meetings;
+    }
 }
