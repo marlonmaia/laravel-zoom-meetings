@@ -7,7 +7,7 @@
 
 With this package you can create Zoom meetings from your Laravel application using Server-To-Server OAuth.
 
-## Installation
+## Installation.
 
 You can install the package via composer:
 
